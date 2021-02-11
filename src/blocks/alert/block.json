@@ -1,0 +1,23 @@
+{
+	"name": "tutorial/alert",
+	"title": "Alert Name",
+	"category": "tutorial",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"selector": ".wp-block-coblocks-alert__title"
+		},
+		"value": {
+			"type": "string",
+			"default": ""
+		},
+		"fontSize": {
+			"type": "string",
+			"default": "20"
+		},
+		"textAlign": {
+			"type": "string",
+			"default": "left"
+		}
+	}
+}
