@@ -8,7 +8,7 @@ import { Icon } from "@wordpress/components";
 setCategories([
   {
     slug: "tutorial",
-    title: __("Tutorial", "tutorial"),
+    title: __("Guten cat Title", "tutorial"),
     icon: <Icon icon={"wordpress"} />,
   },
   ...getCategories().filter(({ slug }) => slug !== "tutorial"),

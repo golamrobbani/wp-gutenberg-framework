@@ -1,10 +1,12 @@
 /**
  * Internal dependency
  */
-// import "./utils/block-category";
-// import * as alert from "./blocks/alert";
+//import "./utils/block-category";
+import * as alert from "./blocks/alert";
 
 import * as hello from "./blocks/hello";
+
+//import * as pricing from "./blocks/pricing-table";
 
 /**
  * WordPress dependencies
@@ -34,7 +36,7 @@ const registerBlock = (block) => {
  * Function to register blocks.
  */
 const registerTutorialBlocks = () => {
-  [hello].forEach(registerBlock);
+  [hello, alert].forEach(registerBlock);
 };
 
 registerTutorialBlocks();

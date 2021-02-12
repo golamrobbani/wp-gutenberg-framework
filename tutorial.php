@@ -88,7 +88,7 @@ if (!class_exists('Tutorial')):
 
             // include TUTORIAL_PATH . '/includes/actions.php';
             // include TUTORIAL_PATH . '/includes/scripts.php';
-            // //include TUTORIAL_PATH . '/includes/register-blocks.php';
+            include TUTORIAL_PATH . '/includes/functions.php';
             include TUTORIAL_PATH . '/vendor/autoload.php';
         }
 

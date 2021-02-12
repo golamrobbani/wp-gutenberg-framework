@@ -40,6 +40,7 @@ class Scripts
      */
     public function __construct()
     {
+        //add_action("init", [$this, 'ddd']);
         add_action('enqueue_block_assets', [$this, 'block_style_assets']);
         add_action('enqueue_block_editor_assets', [$this, 'block_editor_assets']);
     }
@@ -74,5 +75,24 @@ class Scripts
     public function block_style_assets()
     {
         wp_enqueue_style('tutorial-block-style-css', TUTORIAL_DIST_URL . '/style.css', false, time(), 'all');
+    }
+
+    public function ddd()
+    {
+        function tutorial_block_categories($categories)
+        {
+            $category_slugs = wp_list_pluck($categories, 'slug');
+            return in_array('gwg', $category_slugs, true) ? $categories : array_merge(
+                $categories,
+                array(
+                    array(
+                        'slug' => 'gwg',
+                        'title' => __('Get With Gutenberg', 'gwg'),
+                        'icon' => null,
+                    ),
+                )
+            );
+        }
+        add_filter('block_categories', 'tutorial_block_categories');
     }
 }

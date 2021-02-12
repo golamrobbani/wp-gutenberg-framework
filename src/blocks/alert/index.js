@@ -1,7 +1,6 @@
 /**
  * Internal dependencies
  */
-alert("golam Robbani");
 import deprecated from "./deprecated";
 import edit from "./edit";
 import icon from "./icon";

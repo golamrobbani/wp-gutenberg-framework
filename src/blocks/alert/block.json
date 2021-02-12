@@ -1,7 +1,7 @@
 {
 	"name": "tutorial/alert",
 	"title": "Alert Name",
-	"category": "tutorial",
+	"category": "common",
 	"attributes": {
 		"title": {
 			"type": "string",
