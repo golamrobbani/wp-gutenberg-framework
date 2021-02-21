@@ -18,7 +18,7 @@ if (!class_exists('Tutorial')):
      * @since 1.0.0
      */
     final class Tutorial
-{
+    {
         /**
          * This plugin's instance.
          *
@@ -38,7 +38,7 @@ if (!class_exists('Tutorial')):
          * @return object|Tutorial The one true Tutorial
          */
         public static function instance()
-    {
+        {
             if (!isset(self::$instance) && !(self::$instance instanceof Tutorial)) {
                 self::$instance = new Tutorial();
                 self::$instance->define_constants();
@@ -54,7 +54,7 @@ if (!class_exists('Tutorial')):
          * @return type
          */
         private function define_constants()
-    {
+        {
             $this->define('TUTORIAL_PATH', dirname(__FILE__));
             $this->define('TUTORIAL_INCLUDES_PATH', dirname(__FILE__) . '/includes');
             $this->define('TUTORIAL_DIST_PATH', dirname(__FILE__) . '/dist');
@@ -72,7 +72,7 @@ if (!class_exists('Tutorial')):
          * @return type
          */
         private function define($name, $value)
-    {
+        {
             if (!defined($name)) {
                 define($name, $value);
             }
@@ -84,12 +84,12 @@ if (!class_exists('Tutorial')):
          * @return void
          */
         private function includes()
-    {
+        {
 
-            // include TUTORIAL_PATH . '/includes/actions.php';
-            // include TUTORIAL_PATH . '/includes/scripts.php';
-            include TUTORIAL_PATH . '/includes/functions.php';
-            include TUTORIAL_PATH . '/vendor/autoload.php';
+            include TUTORIAL_PATH . '/includes/actions.php';
+             include TUTORIAL_PATH . '/includes/scripts.php';
+            //include TUTORIAL_PATH . '/includes/functions.php';
+            //include TUTORIAL_PATH . '/vendor/autoload.php';
         }
 
         /**
@@ -98,7 +98,7 @@ if (!class_exists('Tutorial')):
          * @return void
          */
         private function dependency_class_instance()
-    {
+        {
             \Tutorial\Includes\Actions::instance();
             \Tutorial\Includes\Scripts::instance();
             //\Tutorial\Includes\Register_Blocks::register();
