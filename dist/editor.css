@@ -1,3 +1,53 @@
 
+[data-type="tutorial/author2"] .block-editor-inner-blocks .block-editor-block-list__block-edit {
+  margin-bottom: 0;
+  margin-top: 0; }
+
+[data-type="tutorial/author2"] [data-type="core/button"] {
+  display: block; }
+  [data-type="tutorial/author2"] [data-type="core/button"] [data-block] {
+    margin-bottom: 0; }
+  [data-type="tutorial/author2"] [data-type="core/button"] .block-editor-block-list__block-edit::before {
+    border: none;
+    box-shadow: none; }
+
+[data-type="tutorial/author2"].is-selected .wp-block-button__inline-link {
+  display: none; }
+
+[data-type="tutorial/author2"].has-child-selected .wp-block-button__inline-link {
+  display: block; }
+
+[data-type="tutorial/author2"] .wp-block-button {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.wp-block-tutorial-author2__avatar {
+  background: #fff;
+  position: relative; }
+  .wp-block-tutorial-author2__avatar .components-button {
+    border-radius: 100%;
+    height: 100%;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%; }
+    .wp-block-tutorial-author2__avatar .components-button .block-editor-block-icon {
+      margin: auto; }
+      .wp-block-tutorial-author2__avatar .components-button .block-editor-block-icon svg {
+        margin: auto auto;
+        pointer-events: none;
+        transform: translate3d(0, 0, 0);
+        transition: transform 100ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.block-editor-inserter__preview-content .wp-block-tutorial-author2 .components-button {
+  opacity: 1; }
+
+.block-editor-inserter__preview-content .wp-block-tutorial-author2 .wp-block-tutorial-author2__avatar {
+  height: 110px;
+  width: 110px; }
+
+.block-editor-inserter__preview-content .wp-block-tutorial-author2 .block-editor-block-list__layout {
+  margin-left: 0; }
+
 
 /*# sourceMappingURL=editor.css.map*/

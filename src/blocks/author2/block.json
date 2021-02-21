@@ -1,0 +1,41 @@
+{
+    "name":"tutorial/author2",
+    "category":"common",
+    "attributes": {
+		"biography": {
+			"type": "array",
+			"source": "children",
+			"selector": ".wp-block-tutorial-author2__biography",
+			"default": []
+		},
+		"name": {
+			"type": "string",
+			"source": "html",
+			"selector": ".wp-block-tutorial-author2__name"
+		},
+		"imgId": {
+			"type": "number"
+		},
+		"imgUrl": {
+			"type": "string",
+			"source": "attribute",
+			"attribute": "src",
+			"selector": "img"
+		},
+        "backgroundColor": {
+			"type": "string"
+		},
+		"customBackgroundColor": {
+			"type": "string"
+		},
+		"textColor": {
+			"type": "string"
+		},
+		"customTextColor": {
+			"type": "string"
+		}
+		
+
+    }
+
+}

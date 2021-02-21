@@ -11,5 +11,42 @@
 .is-style-error {
   background: #ffdede; }
 
+.wp-block-tutorial-author2 {
+  align-items: flex-start;
+  background: #ddd;
+  display: flex;
+  padding: 30px 25px;
+  position: relative; }
+  .wp-block-tutorial-author2__avatar,
+  .wp-block-tutorial-author2 figure.wp-block-tutorial-author2__avatar {
+    border-radius: 100%;
+    flex: 0 0 auto;
+    height: 70px;
+    margin: 0 25px 0 0;
+    position: relative;
+    width: 70px; }
+  .wp-block-tutorial-author2__avatar-img {
+    border-radius: 100%;
+    display: inline-block;
+    height: 100% !important;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    width: 100%; }
+  .wp-block-tutorial-author2__content {
+    flex: 1 1 auto; }
+  .wp-block-tutorial-author2__name {
+    display: block;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0; }
+  .wp-block-tutorial-author2__biography {
+    margin: 0 0 1em; }
+    .wp-block-tutorial-author2__biography:last-of-type {
+      margin-bottom: 0; }
+  .wp-block-tutorial-author2 .wp-block-button {
+    margin: 1em 0 0 0; }
+
 
 /*# sourceMappingURL=style.css.map*/

@@ -3,6 +3,7 @@
  */
 //import "./utils/block-category";
 import * as alert from "./blocks/alert";
+import * as author2 from "./blocks/author2";
 
 import * as hello from "./blocks/hello";
 
@@ -36,7 +37,7 @@ const registerBlock = (block) => {
  * Function to register blocks.
  */
 const registerTutorialBlocks = () => {
-  [hello, alert].forEach(registerBlock);
+  [hello, alert, author2].forEach(registerBlock);
 };
 
 registerTutorialBlocks();
